@@ -1,0 +1,42 @@
+body {
+  background-color: #FFF;
+  margin: 0;
+  min-height: 100%;
+  font: 16px/1 sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .carousel {
+  width: 100%;
+  height: 5em;
+}
+.container .selling-points {
+  display: flex;
+  flex-direction: row;
+}
+.container .selling-points section {
+  border: 1px solid red;
+  box-sizing: border-box;
+  flex-basis: 25%;
+}
+.container .recent-work {
+  display: flex;
+  flex-direction: column;
+}
+.container .recent-work .portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container .recent-work .portfolio .portfolio-item {
+  flex-basis: 25%;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  height: 200px;
+}
+
+/*# sourceMappingURL=public/out/css/style.css.map */

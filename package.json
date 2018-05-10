@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "deploy": "surge ./public --domain choose-css.ctiller.surge.sh",
-    "start": "browser-sync start --server 'public' --files 'public'"
+    "start": "browser-sync start --server --startPath public --files public",
+    "sass-start": "sass .\\public\\src\\scss\\style.scss .\\public\\out\\css\\style.css"
   },
   "dependencies": {
     "browser-sync": "^2.24.4",
