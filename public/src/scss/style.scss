@@ -11,17 +11,19 @@ body {
 
     .carousel{
         width: 100%;
-        height: 5em;
+        height: 6em;
+        border: 1px solid black;
     }
 
     .selling-points {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
 
         section {
             border: 1px solid red;
             box-sizing: border-box;
-            flex-basis: 25%;
+            flex-basis: 100%;
         }
     }
 
@@ -33,15 +35,65 @@ body {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 100%;
+            flex-basis: 100%;
 
             .portfolio-item {
-                flex-basis: 25%;
+                flex-basis: 100%;
                 border: 1px solid blue;
                 box-sizing: border-box;
                 height: 200px;
             }
         }
 
+    }
+
+    .recent-news{
+        display: flex;
+        flex-direction: column;
+
+        .news{
+            display: flex;
+            flex-wrap: wrap;
+
+            .news-item {
+                width: 100%;
+                border: 1px solid magenta;
+                height: 200px;
+            }
+        }
+    }
+
+    footer.footer{
+        display: flex;
+        flex-direction: column;
+
+        .tags{
+            display: flex;
+            flex-direction: column;
+
+            .taglist{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .tag{
+                    border: 1px solid green;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    margin: 2px;
+                }
+            }
+        }
+
+        .recent-posts{
+            display: flex;
+            flex-direction: column;
+
+            .posts{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
     }
   }

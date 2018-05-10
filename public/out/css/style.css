@@ -2,41 +2,65 @@ body {
   background-color: #FFF;
   margin: 0;
   min-height: 100%;
-  font: 16px/1 sans-serif;
-}
+  font: 16px / 1 sans-serif; }
 
 .container {
   display: flex;
-  flex-direction: column;
-}
-.container .carousel {
-  width: 100%;
-  height: 5em;
-}
-.container .selling-points {
-  display: flex;
-  flex-direction: row;
-}
-.container .selling-points section {
-  border: 1px solid red;
-  box-sizing: border-box;
-  flex-basis: 25%;
-}
-.container .recent-work {
-  display: flex;
-  flex-direction: column;
-}
-.container .recent-work .portfolio {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.container .recent-work .portfolio .portfolio-item {
-  flex-basis: 25%;
-  border: 1px solid blue;
-  box-sizing: border-box;
-  height: 200px;
-}
-
-/*# sourceMappingURL=public/out/css/style.css.map */
+  flex-direction: column; }
+  .container .carousel {
+    width: 100%;
+    height: 6em;
+    border: 1px solid black; }
+  .container .selling-points {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .container .selling-points section {
+      border: 1px solid red;
+      box-sizing: border-box;
+      flex-basis: 100%; }
+  .container .recent-work {
+    display: flex;
+    flex-direction: column; }
+    .container .recent-work .portfolio {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 100%; }
+      .container .recent-work .portfolio .portfolio-item {
+        flex-basis: 100%;
+        border: 1px solid blue;
+        box-sizing: border-box;
+        height: 200px; }
+  .container .recent-news {
+    display: flex;
+    flex-direction: column; }
+    .container .recent-news .news {
+      display: flex;
+      flex-wrap: wrap; }
+      .container .recent-news .news .news-item {
+        width: 100%;
+        border: 1px solid magenta;
+        height: 200px; }
+  .container footer.footer {
+    display: flex;
+    flex-direction: column; }
+    .container footer.footer .tags {
+      display: flex;
+      flex-direction: column; }
+      .container footer.footer .tags .taglist {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .container footer.footer .tags .taglist .tag {
+          border: 1px solid green;
+          padding: 5px;
+          box-sizing: border-box;
+          margin: 2px; }
+    .container footer.footer .recent-posts {
+      display: flex;
+      flex-direction: column; }
+      .container footer.footer .recent-posts .posts {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; }
