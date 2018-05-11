@@ -133,6 +133,12 @@ footer.footer {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap; }
+      footer.footer .recent-posts .posts .post {
+        border-bottom: 1px solid gray;
+        padding: 10px 0; }
+        footer.footer .recent-posts .posts .post a {
+          text-decoration: none;
+          color: #FFF; }
   footer.footer .search-section input {
     width: 100%; }
   footer.footer .attributions {

@@ -213,6 +213,16 @@ body {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+
+            .post{
+                border-bottom: 1px solid gray;
+                padding: 10px 0;
+
+                a{
+                    text-decoration: none;
+                    color: #FFF;
+                }
+            }
         }
     }
 
