@@ -3,11 +3,15 @@ body {
     margin: 0;
     min-height: 100%;
     font: 16px / 1 sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    width: 90%;
 
     .navbar{
 
@@ -40,8 +44,30 @@ body {
 
     .carousel{
         width: 100%;
-        height: 6em;
+        height: 150px;
         border: 1px solid black;
+        position: relative;
+
+        .carousel-img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            width: auto;
+            color: white;
+            z-index: 5;
+        }
+
+        .next{
+            right: 0;
+        }
     }
 
     .selling-points {
@@ -60,20 +86,8 @@ body {
         display: flex;
         flex-direction: column;
         
-        h2 {
-            background: #000;
-            height: 1px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 1em 0;
-        }
 
-        h2 span{
-            text-align: center;
-            background: #fff;
-            padding: 10px;
-        }
+
 
         .portfolio {
             display: flex;
@@ -86,6 +100,7 @@ body {
                 border: 1px solid blue;
                 box-sizing: border-box;
                 height: 200px;
+                margin: 1em 0;
             }
         }
 
@@ -101,8 +116,14 @@ body {
 
             .news-item {
                 width: 100%;
-                border: 1px solid magenta;
-                height: 200px;
+
+                section{
+                    width: 100%;
+                    border: 1px solid magenta;
+                    height: 200px;
+                    margin: 1em 0;
+                }
+
             }
         }
     }
@@ -114,6 +135,10 @@ body {
         .tags{
             display: flex;
             flex-direction: column;
+
+            hr {
+                width: 100%;
+            }
 
             .taglist{
                 display: flex;
@@ -133,11 +158,42 @@ body {
             display: flex;
             flex-direction: column;
 
+            hr{
+                width: 100%;
+            }
+
             .posts{
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
             }
         }
+
+        .search-section{
+            input {
+                width: 100%;
+            }
+        }
+
+        .attributions{
+            text-align: center;
+        }
     }
+
+    .section-title {
+        background: #000;
+        height: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em 0;
+
+        span{
+            text-align: center;
+            background: #fff;
+            padding: 0 40px;
+        }
+    }
+
+    
   }
