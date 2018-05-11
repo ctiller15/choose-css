@@ -11,9 +11,30 @@ body {
 
     .navbar{
 
+        .navbar-top {
+            border: 1px solid orange;
+        }
+
         .navigation{
             display: flex;
             flex-direction: column;
+
+
+        }
+
+        .nav-mobile-hidden{
+            opacity: 0;
+            height: 0;
+        }
+    }
+
+    .header{
+        h1 {
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
         }
     }
 
@@ -39,6 +60,21 @@ body {
         display: flex;
         flex-direction: column;
         
+        h2 {
+            background: #000;
+            height: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1em 0;
+        }
+
+        h2 span{
+            text-align: center;
+            background: #fff;
+            padding: 10px;
+        }
+
         .portfolio {
             display: flex;
             flex-direction: row;
