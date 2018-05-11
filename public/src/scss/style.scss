@@ -1,3 +1,5 @@
+$footer-background: #222222;
+
 body {
     background-color: #FFF;
     margin: 0;
@@ -148,57 +150,7 @@ body {
         }
     }
 
-    footer.footer{
-        display: flex;
-        flex-direction: column;
 
-        .tags{
-            display: flex;
-            flex-direction: column;
-
-            hr {
-                width: 100%;
-            }
-
-            .taglist{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-
-                .tag{
-                    border: 1px solid green;
-                    padding: 5px;
-                    box-sizing: border-box;
-                    margin: 2px;
-                }
-            }
-        }
-
-        .recent-posts{
-            display: flex;
-            flex-direction: column;
-
-            hr{
-                width: 100%;
-            }
-
-            .posts{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-        }
-
-        .search-section{
-            input {
-                width: 100%;
-            }
-        }
-
-        .attributions{
-            text-align: center;
-        }
-    }
 
     .section-title {
         background: #000;
@@ -217,3 +169,60 @@ body {
 
     
   }
+
+  footer.footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: $footer-background;
+    color: #FFF;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    .tags{
+        display: flex;
+        flex-direction: column;
+
+        hr {
+            width: 100%;
+        }
+
+        .taglist{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .tag{
+                border: 1px solid green;
+                padding: 5px;
+                box-sizing: border-box;
+                margin: 2px;
+            }
+        }
+    }
+
+    .recent-posts{
+        display: flex;
+        flex-direction: column;
+
+        hr{
+            width: 100%;
+        }
+
+        .posts{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+
+    .search-section{
+        input {
+            width: 100%;
+        }
+    }
+
+    .attributions{
+        text-align: center;
+    }
+}

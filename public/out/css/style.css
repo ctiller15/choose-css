@@ -90,36 +90,6 @@ body {
           .container .recent-news .news .news-item section img {
             width: 100%;
             height: 100%; }
-  .container footer.footer {
-    display: flex;
-    flex-direction: column; }
-    .container footer.footer .tags {
-      display: flex;
-      flex-direction: column; }
-      .container footer.footer .tags hr {
-        width: 100%; }
-      .container footer.footer .tags .taglist {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; }
-        .container footer.footer .tags .taglist .tag {
-          border: 1px solid green;
-          padding: 5px;
-          box-sizing: border-box;
-          margin: 2px; }
-    .container footer.footer .recent-posts {
-      display: flex;
-      flex-direction: column; }
-      .container footer.footer .recent-posts hr {
-        width: 100%; }
-      .container footer.footer .recent-posts .posts {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap; }
-    .container footer.footer .search-section input {
-      width: 100%; }
-    .container footer.footer .attributions {
-      text-align: center; }
   .container .section-title {
     background: #000;
     height: 1px;
@@ -131,3 +101,39 @@ body {
       text-align: center;
       background: #fff;
       padding: 0 40px; }
+
+footer.footer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #222222;
+  color: #FFF;
+  padding: 0 30px;
+  box-sizing: border-box; }
+  footer.footer .tags {
+    display: flex;
+    flex-direction: column; }
+    footer.footer .tags hr {
+      width: 100%; }
+    footer.footer .tags .taglist {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      footer.footer .tags .taglist .tag {
+        border: 1px solid green;
+        padding: 5px;
+        box-sizing: border-box;
+        margin: 2px; }
+  footer.footer .recent-posts {
+    display: flex;
+    flex-direction: column; }
+    footer.footer .recent-posts hr {
+      width: 100%; }
+    footer.footer .recent-posts .posts {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+  footer.footer .search-section input {
+    width: 100%; }
+  footer.footer .attributions {
+    text-align: center; }
