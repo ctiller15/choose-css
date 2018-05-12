@@ -17,7 +17,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: $desktop;
+    max-width: 90%;
 
     .navbar{
 
@@ -86,6 +87,12 @@ body {
             box-sizing: border-box;
             flex-basis: 100%;
         }
+
+        @media screen and (min-width: $desktop){
+            section {
+                flex-basis: 25%;
+            }
+        }
     }
 
     .recent-work {
@@ -126,6 +133,12 @@ body {
                     flex-basis: 50%;
                 }
             }
+
+            @media screen and (min-width: $desktop){
+                .portfolio-item {
+                    flex-basis: 25%;
+                }
+            }
         }
 
     }
@@ -160,6 +173,12 @@ body {
                     width: 50%;
                 }
             }
+
+            @media screen and (min-width: $desktop){
+                .news-item {
+                    width: 25%;
+                }
+            }
         }
     }
 
@@ -186,11 +205,23 @@ body {
   footer.footer{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: $desktop;
+    max-width: 90%;
     background-color: $footer-background;
     color: #FFF;
     padding: 0 30px;
     box-sizing: border-box;
+
+    @media screen and (min-width: $desktop){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop){
+        .adapt {
+            flex-basis: 25%;
+        }
+    }
 
     .tags{
         display: flex;
@@ -211,6 +242,12 @@ body {
                 box-sizing: border-box;
                 margin: 2px;
             }
+        }
+    }
+
+    @media screen and (min-width: $desktop){
+        .tags {
+            flex-basis: 25%;
         }
     }
 
@@ -239,14 +276,29 @@ body {
         }
     }
 
+    @media screen and (min-width: $desktop){
+        .recent-posts{
+            flex-basis: 25%;
+        }
+    }
+
     .search-section{
         input {
             width: 100%;
         }
     }
 
+    @media screen and (min-width: $desktop){
+        .search-section {
+            flex-basis: 25%;
+        }
+    }
+
     .attributions{
         text-align: center;
+        @media screen and (min-width: $desktop){
+            flex-basis: 100%;
+        }
     }
 }
 

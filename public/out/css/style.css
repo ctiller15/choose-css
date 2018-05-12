@@ -10,7 +10,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 90%; }
+  width: 1024px;
+  max-width: 90%; }
   .container .navbar .navbar-top {
     border: 1px solid orange; }
   .container .navbar .navigation {
@@ -51,6 +52,9 @@ body {
       border: 1px solid red;
       box-sizing: border-box;
       flex-basis: 100%; }
+    @media screen and (min-width: 1024px) {
+      .container .selling-points section {
+        flex-basis: 25%; } }
   .container .recent-work {
     display: flex;
     flex-direction: column; }
@@ -77,6 +81,9 @@ body {
       @media screen and (min-width: 768px) {
         .container .recent-work .portfolio .portfolio-item {
           flex-basis: 50%; } }
+      @media screen and (min-width: 1024px) {
+        .container .recent-work .portfolio .portfolio-item {
+          flex-basis: 25%; } }
   .container .recent-news {
     display: flex;
     flex-direction: column; }
@@ -96,6 +103,9 @@ body {
       @media screen and (min-width: 768px) {
         .container .recent-news .news .news-item {
           width: 50%; } }
+      @media screen and (min-width: 1024px) {
+        .container .recent-news .news .news-item {
+          width: 25%; } }
   .container .section-title {
     background: #000;
     height: 1px;
@@ -111,11 +121,19 @@ body {
 footer.footer {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 1024px;
+  max-width: 90%;
   background-color: #222222;
   color: #FFF;
   padding: 0 30px;
   box-sizing: border-box; }
+  @media screen and (min-width: 1024px) {
+    footer.footer {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 1024px) {
+    footer.footer .adapt {
+      flex-basis: 25%; } }
   footer.footer .tags {
     display: flex;
     flex-direction: column; }
@@ -130,6 +148,9 @@ footer.footer {
         padding: 5px;
         box-sizing: border-box;
         margin: 2px; }
+  @media screen and (min-width: 1024px) {
+    footer.footer .tags {
+      flex-basis: 25%; } }
   footer.footer .recent-posts {
     display: flex;
     flex-direction: column; }
@@ -145,7 +166,16 @@ footer.footer {
         footer.footer .recent-posts .posts .post a {
           text-decoration: none;
           color: #FFF; }
+  @media screen and (min-width: 1024px) {
+    footer.footer .recent-posts {
+      flex-basis: 25%; } }
   footer.footer .search-section input {
     width: 100%; }
+  @media screen and (min-width: 1024px) {
+    footer.footer .search-section {
+      flex-basis: 25%; } }
   footer.footer .attributions {
     text-align: center; }
+    @media screen and (min-width: 1024px) {
+      footer.footer .attributions {
+        flex-basis: 100%; } }
