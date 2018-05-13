@@ -9,7 +9,8 @@
   </head>
   <body>
     <section class="container">
-      <nav class="navbar">
+      <!-- Navbar for mobile. -->
+      <nav class="navbar hidden-desktop">
         <section class="navbar-top">
           <h3>Menu</h3>
         </section>
@@ -25,10 +26,29 @@
         </section>
       </nav>
 
+      <!-- Navbar for desktop -->
+      <nav class="navbar show-desktop">
+        <section class="navbar-brand">
+          <h3>Adapt</h3>
+        </section>
+
+        <section class="navigation">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">FULL-WIDTH</a></li>
+            <li><a href="#">LANDING PAGE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">DOWNLOAD</a></li>
+          </ul>
+        </section>
+      </nav>
+
       <hr>
 
       <header class="header">
-        <h1>Adapt</h1>
+        <h1 class="hidden-desktop">Adapt</h1>
         <p>Just Another WPExplorer Demos site</p>
       </header>
 
